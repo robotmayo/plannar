@@ -1,0 +1,24 @@
+{
+  "name": "plannar",
+  "version": "0.0.1",
+  "description": "Meal Plannar",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify src/app.jsx -o dist/js/bundle.js -t [ babelify --presets [ es2015 react ] --plugins [ transform-object-assign ] ] -v"
+  },
+  "author": "robotmayo",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-object-assign": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "redux": "^3.0.5"
+  }
+}
